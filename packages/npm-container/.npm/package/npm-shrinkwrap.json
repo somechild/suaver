@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "cryptojs": {
+      "version": "2.5.3"
+    },
+    "future": {
+      "version": "2.3.1"
+    }
+  }
+}
