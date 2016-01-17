@@ -1,0 +1,67 @@
+<template name="viewProfilePage">
+<div class="container-navs">
+	<ul>
+		<li><a onclick="Meteor.logout();Router.go('/')"> logout </a></li>
+		<li><a href="/p"> configure settings </a></li>
+		<li><a href="/send"> generate page </a></li>
+		<li><a href="/bookmarks">bookmarks</a></li>
+	</ul>
+</div>
+<div id="viewsPage">
+<div id="profileSection">
+
+	<div id="viewSection">
+	<br>
+	<br>
+		<a href="#" id="bookmark"> 
+			<div> 
+				<img src="/images/star.png">
+				<h3>Bookmark Page </h3>
+			</div>
+		</a>
+	<br>
+	<br>
+
+	<h1> Links </h1>
+		<ul> 
+			<li>
+				<div id="item">
+				{{#if currentUserProfile.profile.fb}}
+					<input type=button  onClick="location.href='{{currentUserProfile.profile.fb}}'" value="Facebook" class="btn" id="facebookLink"/>
+					<br>
+				{{/if}}
+
+				{{#if currentUserProfile.profile.twtr}}
+				<input type=button  onClick="location.href='{{currentUserProfile.profile.twtr}}'" value="Twitter" class="btn" id="twitterLink"/>
+				<br>
+				{{/if}}
+
+				{{#if currentUserProfile.profile.ig}}
+
+				<input type=button  onClick="location.href='{{currentUserProfile.profile.ig}}'" value="Instagram" class="btn" id="instagramLink"/>
+				<br>
+				{{/if}}
+
+				{{#if currentUserProfile.profile.lnkd}}
+				<input type=button  onClick="location.href='{{currentUserProfile.profile.lnkd}}'" value="Linkedin" class="btn" id="linkedinLink"/><br>
+				{{/if}}
+
+				{{#if currentUserProfile.profile.snpcht}}
+				<input type=button  onClick="location.href='{{currentUserProfile.profile.snpcht}}'" value="Snapchat" class="btn" id="snapchatLink"/><br>
+				{{/if}}
+
+				{{#if currentUserProfile.profile.tmblr}}
+				<input type=button  onClick="location.href='{{currentUserProfile.profile.tmblr}}'" value="Tumblr" class="btn" id="tumblrLink"/><br>
+				{{/if}}
+
+				</div>
+			</li>
+		</ul>
+		
+		</div>
+
+
+</div>
+</div>
+
+</template>

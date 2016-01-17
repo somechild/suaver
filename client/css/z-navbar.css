@@ -1,0 +1,34 @@
+.container-navs a{
+	display: block;
+	height: 100%;
+	line-height: 25px;
+	text-decoration: none;
+	font-size: 15px;
+	color: #BD4233;
+	padding: 5px 5px;
+}
+
+
+.container-navs a:hover {
+	pointer: cursor;
+	text-shadow: 0 0 3px #fff;
+	color: #fff;
+}
+
+.container-navs li {
+	display: inline-block;
+	height: 25px;
+
+}
+
+.container-navs {
+	padding: 5px 0 10px 0;
+	margin-bottom: 10px;
+	box-shadow: 0 2px 5px 3px #c74a3d;
+	background: #F2725D;
+}
+
+.container-navs:hover {
+	color: white;
+}
+

@@ -1,0 +1,66 @@
+
+<template name="profileSetttings">
+<div class="container-navs">
+	<ul>
+		<li><a onclick="Meteor.logout();Router.go('/')"> logout </a></li>
+		<li><a href="/p"> configure settings </a></li>
+		<li><a href="/send"> generate page </a></li>
+		<li><a href="/bookmarks">bookmarks</a></li>
+	</ul>
+</div>
+<div id="profile-settings">
+	<!-- <div id="modal"> <input type="text" placeholder="Retype your password"><br><input type="submit" name="confirmPassword" value="Confirm" id="confirm" class="btn"><input type="submit" name="cancelPassword" value="Cancel" id="cancel" class="btn"></div> -->
+
+	<div id="profile-setting">
+
+		<h1>Welcome {{getUserName}}. Configure your profile.</h1>
+			<div style="background-image:url('{{userImg}}')" id="profile-image"></div>
+		<br>
+
+			<div id="profileImageChangeButton" class="fileUpload btn">
+			<span> Change </span>  
+				<input type="file" accept="image/*" name="profileImageChangeInput" value="Change Picture " class="upload"/> 
+			</div> 
+
+			<input type="submit" value="Remove" id="remove" class ="btn">
+		<br>
+			<input type="text" value="{{getUserName}}" placeholder="Full name" name="profileFullname">
+		<br>
+			<input type="text" value="{{email}}" placeholder="Email" name="profileEmail">
+		<br>
+			<input type="password" placeholder="New Password" name="profileNewPassword">
+		<br>
+			<input type="password" placeholder="Confirm new password" name="profileNewPasswordConf">
+		<br>
+			<input type="submit" value="Save" class="btn" id="saveProfile">
+		<br>
+		<br>
+
+
+		<h2>Social Profiles</h2>
+
+
+		<br>
+		<div style="background-image:url('{{businessImg}}')" id="bussinesCardViewProfileSettings"></div>
+		<br>
+			<div id="profileBusinessaCardUploadButton" class="fileUpload btn">	  <span> Upload Business Card </span>
+				<input type="file" accept="image/*" name="profileBusinessaCardUploadButtonInput" value="Change Business Card" class="upload"> 
+			 </div> 
+		<br>
+			<input type="text" value="{{userProf.fb}}" placeholder="Link to your facebook" name="facebookLink">
+		<br>
+			<input type="text" value="{{userProf.twtr}}" placeholder="Link to your twitter" name="twitterLink">
+		<br>
+			<input type="text" value="{{userProf.lnkd}}" placeholder="Link to your linkedin" name="linkedinLink">
+		<br>
+			<input type="text" value="{{userProf.ig}}" placeholder="Link to your instagram" name="instagramLink">
+		<br>
+			<input type="text" value="{{userProf.tmblr}}" placeholder="Link to a tumblr blog of yours" name="tumblrLink">
+		<br>
+			<input type="text" value="{{userProf.snpcht}}" placeholder="Your snapchat username" name="snapchatUsername">
+		<br>
+			<input type="submit" value="Save" class="btn"  id="save-social">
+		<br>
+ 	</div>
+ </div>
+</template>

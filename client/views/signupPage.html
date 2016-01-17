@@ -1,0 +1,16 @@
+<template name="signupPage">
+	<div id="signUpWrapper">
+			<h1> Sign Up </h1>
+		<form id="signUpForm" name="signUp"> 
+			<input type="text" name="full-name" placeholder="Full Name" required> <br>
+			<input type="email" name="email" placeholder="Email" required> <br>
+			<input type="password" name="password" placeholder="Password - make it safe!" required> <br>
+			<input type="password" name="passwordConf" placeholder="Confirm Password" required> <br> <br>
+			<p> By creating an account, you agree to our <a href="#"> Terms and Conditions </a> </p> <br> <br>
+			<input type="submit" name="submit" value="create account" id="submit-btn" class="btn"/>
+			<br>
+		</form>
+			<p> Have an account? <a href="/login"> Login Here </a> </p>	
+	</div>
+</template>
+
