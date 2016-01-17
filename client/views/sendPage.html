@@ -1,0 +1,24 @@
+<template name="sendPage">
+
+<div class="container-navs">
+	<ul>
+		<li><a onclick="Meteor.logout();Router.go('/')"> logout </a></li>
+		<li><a href="/p"> configure settings </a></li>
+		<li><a href="/send"> generate page </a></li>
+		<li><a href="/bookmarks">bookmarks</a></li>
+	</ul>
+</div>
+	<div id="profileSend">	
+		<h1> Choose Information To Share: </h1>
+		<ul>
+			<li> <input type="checkbox" name="link2" value="businessCardChoosen"> Business Card </li> 
+			<li> <input type="checkbox" name="link" value="fb">  Facebook </li>
+			<li> <input type="checkbox" name="link" value="twtr">  Twitter </li>
+			<li> <input type="checkbox" name="link" value="lnkd">  Linkedin </li>
+			<li> <input type="checkbox" name="link" value="ig">  Instagram </li>
+			<li> <input type="checkbox" name="link" value="tmblr">  Tumblr </li>
+			<li> <input type="checkbox" name="link" value="snpcht">  Snapchat </li>
+		</ul>
+		<input type="submit" value="Send Profile"  name="sendProfile" id="sendButton" class="btn">
+	</div>
+</template>

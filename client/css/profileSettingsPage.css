@@ -1,0 +1,136 @@
+
+/*-------------------------------------
+---------------------------------------
+ Profile Settings Page
+---------------------------------------
+-------------------------------------*/
+#profile-setting {
+	display: block;
+	padding-bottom: 20px;
+	margin-bottom: 120px;
+}
+
+#profile-image {
+	width: 100px;
+	height: 100px;
+	position: relative;
+	margin: 0 auto;
+	background: white;
+	border-radius: 100%;
+	box-shadow: 0 2px 8px 2px #BD4233;
+	background-position: center;
+	background-size: cover;
+}
+
+#bussinesCardViewProfileSettings {
+	width: 300px;
+	height: 130px;
+	position: relative;
+	margin: 0 auto;
+	background: white;
+	border-radius: 5px;
+	box-shadow: 0 2px 8px 2px #BD4233;
+	background-position: center;
+	background-size: cover;
+}
+
+#profile-setting> h2 {
+	margin-top: 15px;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+#profile-setting> input {
+	width: 300px;
+	font-size: 15px;
+}
+
+#profile-setting>input[type=text]::-webkit-input-placeholder,
+#profile-setting>input[type=password]::-webkit-input-placeholder {
+	color: #fff;
+}
+
+
+#profile-setting>h1 {
+	margin: 20px 0 35px 0;
+	font-size: 28px;
+}
+
+#profile-setting>input[type=text],
+#profile-setting>input[type=password]
+ {
+	margin: 6px 0;
+	border-radius: 2px;
+	border: none;
+	padding: 20px 15px;
+	background: #BD4233;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	outline: none;
+	color: #fff;
+}
+
+
+#profile-setting>input[type=text]:focus,
+#profile-setting>input[type=password]:focus {
+		box-shadow: 0 0 3px 2px rgba(255, 255, 255, 0.2);
+		outline: none;
+}
+
+/*-------------------------------------
+---------------------------------------
+	Buttons
+---------------------------------------
+-------------------------------------*/
+
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 17px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+#profileImageChangeButton {
+	color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+}
+
+#remove {
+	width: 100px!important;
+	font-size: 17px!important;
+}
+
+#saveProfile, #save-social {
+	background-color: #5cb85c;
+    border-color: #4cae4c;
+}
+
+#profileBusinessaCardUploadButton {
+	width: 200px;
+}
+/*-------------------------------------
+---------------------------------------
+	Links
+---------------------------------------
+-------------------------------------*/
+#profile-setting a {
+	text-decoration: none;
+	color: #5ad9fc;
+}
+
+#profile-setting a:hover {
+	pointer: cursor;
+	padding-bottom: 2px;
+	text-shadow: 0 0 3px #fff;
+	color: #fff;
+}

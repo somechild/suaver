@@ -1,0 +1,76 @@
+<template name="bookmarkedPages">
+
+<div class="container-navs">
+	<ul>
+		<li><a onclick="Meteor.logout();Router.go('/')"> logout </a></li>
+		<li><a href="/p"> configure settings </a></li>
+		<li><a href="/send"> generate page </a></li>
+		<li><a href="/bookmarks">bookmarks</a></li>
+	</ul>
+</div>
+	<!-- profile image, profile name, profile list -->
+	<h1 id="title-bookmarks">Your Bookmarked Pages: </h1>
+
+	<ul> 
+	{{#each bookmarkedPages}}
+		<li>
+		<div id="placeholder">
+			<a href="/view/{{this.value}}">
+				<img class="profile-pic" src="{{getUserDp}}" width="100px" height="120px"> 
+				<div class="bookmark-info">
+					<h2> {{getUserName}} </h2>
+				</div>
+			</a>
+				<div class="delete-bookmark" onclick="alert('clicked');">
+					<img src="/images/icon_delete.png" width="30px" height="30px">
+				</div>
+		</div><br>
+		<!--
+			<a href="/view/{{this.value}}">
+				<div class="markedPage">
+					<img src="{{getUserDp}}" class="markedPic">
+					<p> {{getUserName}} </p>
+				</div>
+			</a>
+			<button type="button"> Remove </button>
+			-->
+		</li>
+	{{/each}}
+	</ul>
+
+	<div id="placeholder">
+		<a href="www.google.com">
+			<img class="profile-pic" src="http://www.corporatetraveller.ca/assets/images/profile-placeholder.gif" width="100px" height="120px"> 
+			<div class="bookmark-info">
+				<h2> User Name </h2>
+			</div>
+		</a>
+			<div class="delete-bookmark" onclick="alert('clicked');">
+				<img src="/images/icon_delete.png" width="30px" height="30px">
+			</div>
+	</div>
+
+	<div id="placeholder">
+		<a href="www.google.com">
+			<img class="profile-pic" src="http://www.corporatetraveller.ca/assets/images/profile-placeholder.gif" width="100px" height="120px"> 
+			<div class="bookmark-info">
+				<h2> User Name </h2>
+			</div>
+		</a>
+			<div class="delete-bookmark" onclick="alert('clicked');">
+				<img src="/images/icon_delete.png" width="30px" height="30px">
+			</div>
+	</div>
+
+	<div id="placeholder">
+		<a href="www.google.com">
+			<img class="profile-pic" src="http://www.corporatetraveller.ca/assets/images/profile-placeholder.gif" width="100px" height="120px"> 
+			<div class="bookmark-info">
+				<h2> User Name </h2>
+			</div>
+		</a>
+			<div class="delete-bookmark" onclick="alert('clicked');">
+				<img src="/images/icon_delete.png" width="30px" height="30px">
+			</div>
+	</div>
+</template>

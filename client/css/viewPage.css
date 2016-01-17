@@ -1,0 +1,80 @@
+#bookmark-btn {
+    float: left;
+    margin: 20
+}
+
+#viewSection h1 {
+    font-size: 28px;
+    padding-bottom: 5px;
+}
+
+#viewSection .btn {
+    margin: 2px 0 3px 0;
+    width: 250px;
+}
+
+#facebookLink {
+    background: #3B5998;
+    border-color: #304E91;
+}
+
+#twitterLink {
+    background: #55ACEE;
+    border-color: #409EE7;
+}
+
+#linkedinLink {
+    background: #007BB6;
+    border-color: #017CB5;
+}
+
+#snapchatLink {
+     background: #F7931E;
+    border-color: #F48B10;
+}
+
+#tumblrLink {
+    background: #2C4762;
+    border-color: #213850;
+}
+
+#instagramLink {
+    background: #FD638B;
+    border-color: #F8507B;
+}
+
+#gmailLink {
+    background: #FD638B;
+    border-color: #F8507B;
+}
+
+#viewSection a {
+    text-decoration: none;
+    color: #5ad9fc;
+}
+
+#viewSection a:hover {
+    pointer: cursor;
+    padding-bottom: 2px;
+    text-shadow: 0 0 3px #fff;
+    color: #fff;
+}
+
+#viewSection>#bookmark {
+   margin: 10px auto;
+   padding-top: 20px;
+
+}
+
+#viewSection {
+    margin-bottom: 120px;
+}
+
+#bookmark h3 {
+    display: inline;
+}
+
+#bookmark img {
+    position: relative;
+    top: 8px;
+}
