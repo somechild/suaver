@@ -1,5 +1,6 @@
 #suaver
 **Generate digital social and professional profile pages on the fly. Sort of like online business cards.**
+By [Revanth Sakthi](https://github.com/revanthsakthi), [Varun Gupta](https://github.com/vari) and [Jay Patel](https://github.com/sum-kcid)
 
 Check the site: [suaver.me](https://suaver.me)
 
