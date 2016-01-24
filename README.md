@@ -8,7 +8,7 @@ By [Revanth Sakthi](https://github.com/revanthsakthi) -- Front-end, [Varun Gupta
 Check the site: [suaver.me](https://suaver.me)
 
 ```
-*Visit the 'Meteor-App' branch to view the Desktop site/Mobile site/iOs Cordova app/Android Cordova app.
+*Visit the 'master' branch to view the Desktop site/Mobile site/iOs Cordova app/Android Cordova app.
 
 * Visit the 'Pebble' branch to check out the Pebble.js integration
 ```
