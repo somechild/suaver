@@ -1,7 +1,7 @@
 Meteor.startup(function () {
 	smtp = {
 		username: 'noreply@suaver.me',
-		password: '465823',
+		password: 'password',
 		server:   'mail.privateemail.com',
 		port: 587
 	}
